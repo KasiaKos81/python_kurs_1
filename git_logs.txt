@@ -1,0 +1,128 @@
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        piosenka.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git commit -m "piosdenka 1"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        piosenka.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git add --all
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git commit -m "piosenka1"
+[master 1d1164c] piosenka1
+ 1 file changed, 20 insertions(+)
+ create mode 100644 piosenka.txt
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git log
+commit 852f097aa8b5633cd97a6541692d7deac22e21f4 (HEAD -> master)
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:39:50 2025 +0200
+
+    Revert "remove line from refren"
+
+    This reverts commit ecf7187ebf161e581cd7af9c84e19686108a4874.
+
+commit ecf7187ebf161e581cd7af9c84e19686108a4874
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:35:46 2025 +0200
+
+    remove line from refren
+
+commit 96d11d14558603d54cf8ec3c2eaaf654fd110731
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:34:37 2025 +0200
+
+    adding file name
+
+commit a16bf849126fb5c40bfa69c53ef670662a977014
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:32:29 2025 +0200
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   piosenka.txt
+        deleted:    refren_1.txt
+        deleted:    refren_2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        refren.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git add --all
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git commit -m "final commit"
+[master 71ee12c] final commit
+ 3 files changed, 2 insertions(+), 3 deletions(-)
+ rename refren_1.txt => refren.txt (100%)
+ delete mode 100644 refren_2.txt
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git log
+commit 71ee12c293ee38988df4a5410215fea75ae46b48 (HEAD -> master)
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:46:07 2025 +0200
+
+    final commit
+
+commit 852f097aa8b5633cd97a6541692d7deac22e21f4
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:39:50 2025 +0200
+
+    Revert "remove line from refren"
+
+    This reverts commit ecf7187ebf161e581cd7af9c84e19686108a4874.
+
+commit ecf7187ebf161e581cd7af9c84e19686108a4874
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:35:46 2025 +0200
+
+    remove line from refren
+
+commit 96d11d14558603d54cf8ec3c2eaaf654fd110731
+Author: Kasia <kasiakos81@gmail.com>
+Date:   Wed Oct 15 15:34:37 2025 +0200
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        historia.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git add --all
+
+Katarzyna@DESKTOP-UOP7C39 MINGW64 ~/kurs_39 (master)
+$ git commit -m "historia"
+[master fbf322a] historia
+ 1 file changed, 25 insertions(+)
+ create mode 100644 historia.txt.txt

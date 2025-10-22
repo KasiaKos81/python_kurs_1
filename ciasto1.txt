@@ -1,0 +1,10 @@
+ciasto1
+
+mleko
+maslo
+jajka
+cukier
+maka
+
+robot
+piekarnik
